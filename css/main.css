@@ -129,8 +129,13 @@ textarea {
 .section__bg {
     display: block;
     position: relative;
-    z-index: -10;
+    z-index: -100;
     width: 100%;
+}
+
+.btn {
+    color: #fff;
+    border-color: #fff;
 }
 
 /* jumbo-image */
@@ -147,11 +152,6 @@ textarea {
     text-align: left;
     line-height: 1;
     color: #fff;
-}
-
-.jumbo-image__content .btn {
-    color: #fff;
-    border-color: #fff;
 }
 
 /* grid */
@@ -181,6 +181,39 @@ textarea {
   color: #e0b661;
   width: 50%;
   float: left;
+}
+
+/* featured-coffee */
+
+.featured-coffee h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.featured-coffee__content {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-align: left;
+    line-height: 1;
+    color: #fff;
+}
+
+.featured-coffee-about {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+.featured-coffee-name {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+.coffee-name__bg {
+  position: relative;
+  z-index: -10;
 }
 
 /* .side-nav */

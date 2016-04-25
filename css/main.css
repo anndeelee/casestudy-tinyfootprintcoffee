@@ -95,17 +95,26 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
    /* main-nav */
 
    .main-nav {
      color: #402425;
-     text-transform: uppercase;
      z-index: 100;
      float: right;
    }
 
    .main-nav li {
      display: inline-block;
+     margin: 15px;
+     font-size: .75em;
+     text-transform: uppercase;
+     letter-spacing: 1.75px;
    }
 
    .main-nav li a {
@@ -124,13 +133,8 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-}
-
-.section__bg {
-    display: block;
-    position: relative;
-    z-index: -100;
-    width: 100%;
+  background-image: url(img/speckled.png);
+  background-repeat: repeat;
 }
 
 .btn {
@@ -152,6 +156,20 @@ textarea {
     text-align: left;
     line-height: 1;
     color: #fff;
+}
+
+/* story */
+
+.story {
+  background-image: url(img/speckled.png);
+  background-repeat: repeat;
+}
+
+.story p {
+  padding: 50px 100px;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  line-height: 1.9em;
 }
 
 /* grid */
@@ -184,6 +202,11 @@ textarea {
 }
 
 /* featured-coffee */
+
+.featured-coffee {
+  background-image: url(img/green-bg.png);
+  background-repeat: repeat;
+}
 
 .featured-coffee h1 {
   text-transform: uppercase;

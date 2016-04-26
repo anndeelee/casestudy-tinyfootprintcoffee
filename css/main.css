@@ -101,6 +101,12 @@ h1 {
   text-transform: uppercase;
 }
 
+h2,
+p,
+li {
+  font-family: 'Montserrat', sans-serif;
+}
+
    /* main-nav */
 
    .main-nav {

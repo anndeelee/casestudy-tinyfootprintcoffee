@@ -94,6 +94,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+     background-image: url(../img/speckled.png);
+     background-repeat: repeat;
+}
+
 
 
 h1 {
@@ -107,18 +112,22 @@ li {
   font-family: 'Montserrat', sans-serif;
 }
 
+   /* main-content */
+   .main-content {
+     position: relative;
+   }
+
    /* main-nav */
 
    .main-nav {
      color: #402425;
-     z-index: 100;
      float: right;
    }
 
    .main-nav li {
      display: inline-block;
      margin: 15px;
-     font-size: .75em;
+     font-size: .8sem;
      text-transform: uppercase;
      letter-spacing: 1.75px;
    }
@@ -132,15 +141,14 @@ li {
      color #9ac961;
    }
 
-/* header */
 
+/* header */
 .page-header {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  background-image: url(img/speckled.png);
-  background-repeat: repeat;
+  height: 6em;
 }
 
 .btn {
@@ -150,25 +158,40 @@ li {
 
 /* jumbo-image */
 
+.jumbo-image {
+  position: relative;
+}
+
+.jumbo__bg {
+    display: block;
+    position: relative;
+    z-index: -10;
+    width: 100%;
+}
+
 .jumbo-image h1 {
   text-transform: uppercase;
   font-size: 3em;
+  line-height: 1.25;
+}
+
+.jumbo-image p {
+  line-height: 1.75;
+  letter-spacing: 1px;
 }
 
 .jumbo-image__content {
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: 15%;
+    left: 8%;
     text-align: left;
-    line-height: 1;
     color: #fff;
 }
 
 /* story */
 
 .story {
-  background-image: url(img/speckled.png);
-  background-repeat: repeat;
+  position: relative;
 }
 
 .story p {
@@ -180,6 +203,19 @@ li {
 
 /* grid */
 
+.grid {
+  position: relative;
+}
+
+.grid h1 {
+  letter-spacing: 2px;
+}
+
+.grid p {
+  letter-spacing: 1px;
+  line-height: 1.75;
+}
+
 .grid-image {
     position: relative;
     width: 50%;
@@ -188,7 +224,6 @@ li {
 
 .grid-image img {
     position: relative;
-    z-index: -10;
 }
 
 .grid-info-classes {
@@ -197,6 +232,16 @@ li {
   color: #c09242;
   width: 50%;
   float: left;
+  text-align: center;
+}
+
+.grid-info-classes a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .9em;
+  color: #c09242;
+  letter-spacing: 4px;
+  font-weight: bold;
 }
 
 .grid-info-news {
@@ -205,21 +250,40 @@ li {
   color: #e0b661;
   width: 50%;
   float: left;
+  text-align: center;
 }
+
+.grid-info-news a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .9em;
+  color: #e0b661;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.grid-info-news h2 {
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: 4px;
+}
+
 
 /* featured-coffee */
 
 .featured-coffee {
-  background-image: url(img/green-bg.png);
+  clear: both;
+  position: relative;
+  background-image: url(../img/green-bg.png);
   background-repeat: repeat;
 }
 
 .featured-coffee h1 {
-  text-transform: uppercase;
-  font-size: 3em;
+  letter-spacing: 2px;
 }
 
 .featured-coffee__content {
+    background-image: url(../img/green-bg.png);
     position: absolute;
     top: 20%;
     left: 20%;
@@ -242,7 +306,7 @@ li {
 
 .coffee-name__bg {
   position: relative;
-  z-index: -10;
+
 }
 
 /* .side-nav */
@@ -279,12 +343,9 @@ li {
     transform: translateY(-50%);
 }
 
-
-
-
-
-
-
+.page-footer {
+  clear: both;
+}
 
 
 

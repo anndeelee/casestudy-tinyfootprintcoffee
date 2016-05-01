@@ -99,7 +99,9 @@ body {
      background-repeat: repeat;
 }
 
-
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 h1 {
   font-family: 'Roboto Slab', serif;
@@ -112,10 +114,6 @@ li {
   font-family: 'Montserrat', sans-serif;
 }
 
-   /* main-content */
-   .main-content {
-     position: relative;
-   }
 
    /* main-nav */
 
@@ -126,8 +124,8 @@ li {
 
    .main-nav li {
      display: inline-block;
-     margin-top: 1em;
-     margin-right: 4em;
+     margin-top: 1.5em;
+     margin-right: 8em;
      font-size: .8em;
      text-transform: uppercase;
      letter-spacing: 1.85px;
@@ -139,7 +137,8 @@ li {
    }
 
    .main-nav li a:hover {
-     color #9ac961;
+     color #97ca5b;
+     transition: all 0.3s;
    }
 
 
@@ -155,8 +154,8 @@ li {
 
 .page-header .logo {
     position: absolute;
-    top: 7%;
-    left: 7%;
+    top: 9%;
+    left: 12%;
 }
 .page-header .logo img {
   width: 160px;
@@ -201,6 +200,11 @@ li {
   padding: 15px 65px;
 }
 
+.jumbo-image .btn:hover {
+  border: 2px solid;
+  transition: all 0.3s;
+}
+
 .jumbo-image__content {
     position: absolute;
     top: 15%;
@@ -224,29 +228,36 @@ li {
 
 /* grid */
 
-.grid {
+.info {
   position: relative;
 }
 
-.grid h1 {
+.info h1 {
   letter-spacing: 2px;
 }
 
-.grid p {
+.info p {
   font-size: .9em;
   letter-spacing: 1px;
   line-height: 1.65;
 }
 
-.grid-image {
-    position: relative;
-    width: 50%;
-    float: left;
+#grid1 {
+  width: 50%;
+  background: url('../img/latte-art.jpg') no-repeat center;
+  background-size: cover;
 }
 
-.grid-image img {
-    position: relative;
+#grid2 {
+  width: 50%;
+  background: url('../img/tree-planting.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.grid-image {
     width: 100%;
+    float: left;
+    height: 360px;
 }
 
 .grid-info-classes {
@@ -256,6 +267,8 @@ li {
   width: 50%;
   float: left;
   text-align: center;
+  height: 325px;
+  padding-top: 35px;
 }
 
 .grid-info-classes a {
@@ -274,8 +287,8 @@ li {
   width: 50%;
   float: left;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  height: 325px;
+  padding-top: 35px;
 }
 
 .grid-info-news a {
@@ -293,7 +306,7 @@ li {
   letter-spacing: 3px;
 }
 
-.grid a:hover {
+.info a:hover {
   color: white;
 }
 
@@ -303,18 +316,16 @@ li {
 .featured-coffee {
   clear: both;
   position: relative;
-  background-image: url(../img/green-bg.png);
-  background-repeat: repeat;
+  height: 470px;
 }
 
 .featured-coffee__content {
     background-image: url(../img/green-bg.png);
     position: absolute;
-    top: 20%;
-    left: 20%;
-    text-align: left;
     line-height: 1;
     color: #fff;
+    height: 470px;
+    padding-top: 60px;
 }
 
 .featured-coffee h1 {
@@ -341,10 +352,16 @@ li {
   padding: 15px 55px;
 }
 
+.featured-coffee .btn:hover {
+  border: 2px solid;
+  transition: all 0.3s;
+}
+
 .featured-coffee-about {
   position: relative;
   width: 50%;
   float: left;
+  padding-left: 12%;
 }
 
 .featured-coffee-about h2 {
@@ -367,14 +384,13 @@ li {
   letter-spacing: 2px;
   top: 50%;
   left: 50%;
-
   z-index: 200;
 }
 
 .coffee-name__bg {
   position: relative;
-  padding: 65px;
-
+  top: 50%;
+  left: 50%;
 }
 
 /* .side-nav */
@@ -412,7 +428,7 @@ li {
 }
 
 .page-footer {
-  clear: both;
+  height: 360px;
 }
 
 

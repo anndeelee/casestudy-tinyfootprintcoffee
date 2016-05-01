@@ -233,8 +233,9 @@ li {
 }
 
 .grid p {
+  font-size: .9em;
   letter-spacing: 1px;
-  line-height: 1.75;
+  line-height: 1.65;
 }
 
 .grid-image {
@@ -245,6 +246,7 @@ li {
 
 .grid-image img {
     position: relative;
+    width: 100%;
 }
 
 .grid-info-classes {
@@ -261,7 +263,7 @@ li {
   text-decoration: none;
   font-size: .9em;
   color: #c09242;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-weight: bold;
 }
 
@@ -272,6 +274,8 @@ li {
   width: 50%;
   float: left;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .grid-info-news a {
@@ -279,14 +283,18 @@ li {
   text-decoration: none;
   font-size: .9em;
   color: #e0b661;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-weight: bold;
 }
 
 .grid-info-news h2 {
   text-transform: uppercase;
   font-size: .9em;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
+}
+
+.grid a:hover {
+  color: white;
 }
 
 

@@ -122,10 +122,14 @@ li {
      float: right;
    }
 
+   .main-nav ul {
+     margin-right: 10em;
+   }
+
    .main-nav li {
      display: inline-block;
      margin-top: 1.5em;
-     margin-right: 8em;
+     margin-right: 2em;
      font-size: .8em;
      text-transform: uppercase;
      letter-spacing: 1.85px;
@@ -137,7 +141,7 @@ li {
    }
 
    .main-nav li a:hover {
-     color #97ca5b;
+     color: #97ca5b;
      transition: all 0.3s;
    }
 
@@ -310,6 +314,7 @@ li {
 
 .info a:hover {
   color: white;
+  transition: all 0.3s;
 }
 
 
@@ -400,9 +405,12 @@ li {
 .page-footer {
   height: 310px;
   position: relative;
+  width: 100%;
 }
 .footer-wrapper {
-  padding: 3em 11em;
+  position: relative;
+  width: 100%;
+  padding: 3em 5em 3em 9em;
 }
 
 .page-footer h1 {
@@ -416,14 +424,38 @@ li {
 .footer-form {
   position: relative;
   float: left;
-  width: 30%;
-  padding-right: 2em;
+  width: 33%;
+}
+
+.signupfield {
+  background-color: rgba(255, 0, 0, 0);
+  width: 87%;
+  border: 0;
+  border-bottom: 1px solid #c09242;
+  line-height: 2;
+}
+
+.signupbutton {
+  color: #c09242;
+  border-color: #c09242;
+  background-color: rgba(255, 0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: .65em;
+  border-top: 2px solid;
+  border-bottom: 7px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  padding: 12px 120px;
+  margin-top: 25px;
+
 }
 
 .footer-contact {
   position: relative;
   float: left;
-  width: 30%;
+  width: 33%;
 }
 
 .footer-contact p {
@@ -433,14 +465,33 @@ li {
 }
 
 .footer-contact a {
-  color #97ca5b;
+  color: #97ca5b;
   text-decoration: underline;
+}
+
+.footer-contact a:hover {
+  color: #c09242;
+  text-decoration: underline;
+  transition: all 0.3s;
 }
 
 .footer-social {
   position: relative;
   float: left;
-  width: 30%;
+  width: 33%;
+}
+
+.footer-social i {
+  font-size: 3em;
+}
+
+.footer-social a {
+  color: #c09242;
+}
+
+.footer-social a:hover {
+  color: #97ca5b;
+  transition: all 0.3s;
 }
 
 .footer-copyright {

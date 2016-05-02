@@ -159,7 +159,7 @@ li {
 .page-header .logo {
     position: absolute;
     top: 9%;
-    left: 12%;
+    left: 9%;
 }
 .page-header .logo img {
   width: 160px;
@@ -197,16 +197,15 @@ li {
   text-decoration: none;
   letter-spacing: 2px;
   font-size: .75em;
-  border-top: 2px solid;
-  border-bottom: 7px solid;
-  border-left: 2px solid;
-  border-right: 2px solid;
+  box-shadow: 0 6px #fff;
+  border: 2px solid #fff;
   padding: 15px 65px;
 }
 
 .jumbo-image .btn:hover {
   border: 2px solid;
   transition: all 0.3s;
+  box-shadow: none;
 }
 
 .jumbo-image__content {
@@ -228,6 +227,19 @@ li {
   font-size: 1.3em;
   letter-spacing: 2px;
   line-height: 1.9em;
+}
+
+.story a {
+  color: #97ca5b;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .6em;
+  letter-spacing: 1.75px;
+}
+
+.story a:hover {
+  color: #402425;
+  transition: all 0.3s;
 }
 
 /* grid */
@@ -381,6 +393,15 @@ li {
   position: relative;
   width: 50%;
   float: left;
+  background: url(../img/featured-coffee.png)
+  no-repeat;
+  height: 365px;
+  width: 365px;
+  padding-top: 170px;
+  background-size: 365px 365px;
+  text-align: center;
+  background-position:right center;
+  margin-left: 10%;
 }
 
 .featured-coffee-name h2 {
@@ -390,14 +411,8 @@ li {
   position: absolute;
   letter-spacing: 2px;
   z-index: 200;
-  top: 50%;
-  left: 50%;
-}
-
-.coffee-name__bg {
-  position: relative;
-  padding-left: 6em;
-
+  top: 40%;
+  left: 18%;
 }
 
 /* .page-footer */
@@ -433,6 +448,11 @@ li {
   border: 0;
   border-bottom: 1px solid #c09242;
   line-height: 2;
+  color: #000;
+}
+
+.signupfield::-webkit-input-placeholder {
+   color: hsla(38, 50%, 51%, .5);
 }
 
 .signupbutton {
